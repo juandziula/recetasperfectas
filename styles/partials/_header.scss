@@ -1,0 +1,24 @@
+.navbar{
+    background-color: $colorPrincipal !important;
+
+    .navbar-brand{
+        margin-left: 5%;
+    }
+
+    a{
+        color: $colorSecundario !important;
+        font-size: 1.2rem;
+        font-family: $fuentePrincipal;
+        transition: .4s;
+
+        &:hover{
+            color: #ff0000 !important;
+            scale: 1.1;
+            transition: .7s;
+        }
+    }
+        
+    .logo{
+        width: 100px !important;
+    }
+}

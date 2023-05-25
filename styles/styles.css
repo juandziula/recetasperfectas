@@ -1,0 +1,504 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap");
+footer, section, .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #deb887 !important;
+}
+.navbar .navbar-brand {
+  margin-left: 5%;
+}
+.navbar a {
+  color: #fff !important;
+  font-size: 1.2rem;
+  font-family: "Ubuntu", sans-serif;
+  transition: 0.4s;
+}
+.navbar a:hover {
+  color: #ff0000 !important;
+  scale: 1.1;
+  transition: 0.7s;
+}
+.navbar .logo {
+  width: 100px !important;
+}
+
+.hero {
+  background-image: url(../img/hero.jpg);
+  height: 100vh;
+  flex-direction: column;
+  background-attachment: fixed;
+}
+.hero .hero-title {
+  padding: 1rem 4rem;
+  color: #FFF;
+  background-color: rgba(222, 184, 135, 0.716);
+}
+.hero a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-top: 3rem;
+  padding: 0.4rem 3rem;
+}
+.hero a:hover {
+  background-color: rgb(184, 158, 9);
+  transition: 0.6s;
+}
+
+.card-content {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 2rem;
+}
+.card-content .card {
+  padding: 2rem;
+  max-width: 380px;
+  min-width: 250px;
+  background-color: #BA9B72;
+  padding: 1rem;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-inline: 1rem;
+}
+.card-content .card .card__img {
+  min-height: 350px;
+  min-width: 220px;
+  background-size: cover;
+  background-position: center;
+}
+.card-content .card .card__img1 {
+  background-image: url(../img/1-almuerzo-cena.jpg);
+}
+.card-content .card .card__img2 {
+  background-image: url(../img/2-comida-rapida.jpg);
+}
+.card-content .card .card__img3 {
+  background-image: url(../img/3-postres.jpg);
+}
+.card-content .card .card__img4 {
+  background-image: url(../img/4-desayuno.jpg);
+}
+.card-content .card .card__img5 {
+  background-image: url(../img/5-fit.jpg);
+}
+.card-content .card .card__img6 {
+  background-image: url(../img/6-gourmet.jpg);
+}
+.card-content .card .card__info {
+  padding: 1rem;
+}
+.card-content .card .card__info .subtitle {
+  color: #fff;
+  text-shadow: 1px 1px #000;
+}
+.card-content .card .card__info p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.3rem;
+  padding-block: 0.5rem;
+}
+.card-content .card .card__info a {
+  text-decoration: none;
+  background-color: #F0A84A;
+  padding-inline: 2.5rem;
+  padding-block: 0.5rem;
+  font-size: 1.2rem;
+  color: #000;
+  font-weight: bold;
+  border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  .card-content .card .card__info a {
+    padding-inline: 3rem;
+  }
+}
+.card-content .card .card__info a:hover {
+  box-shadow: 0 0 10px #FFF;
+  transition: 0.4s;
+}
+@media screen and (min-width: 768px) {
+  .card-content {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1080px) {
+  .card-content {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+.title {
+  font-size: 3rem;
+  padding-block: 2rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+}
+
+main {
+  background-color: rgb(237, 237, 237);
+  text-align: center;
+  padding-block: 2rem;
+}
+
+footer {
+  text-align: center;
+  background-color: #deb887;
+  padding: 1rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+footer p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+footer img {
+  width: 30px;
+}
+footer .redes-content {
+  padding-block: 0.5rem;
+}
+footer .separador {
+  border-bottom: 1px solid #000;
+  min-width: 80%;
+  margin-inline: 10%;
+}
+
+.galeria-content {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(12, 1fr);
+  width: 80%;
+}
+.galeria-content .gal-img {
+  min-height: 280px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+.galeria-content .gal1 {
+  background-image: url(../img/4-desayuno.jpg);
+}
+@media screen and (min-width: 768px) {
+  .galeria-content .gal1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .galeria-content .gal1 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+}
+.galeria-content .gal2 {
+  background-image: url(../img/3-postres.jpg);
+}
+@media screen and (min-width: 768px) {
+  .galeria-content .gal2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .galeria-content .gal2 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+}
+.galeria-content .gal3 {
+  background-image: url(../img/5-fit.jpg);
+}
+@media screen and (min-width: 768px) {
+  .galeria-content .gal3 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .galeria-content .gal3 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+}
+.galeria-content .gal4 {
+  background-image: url(../img/2-comida-rapida.jpg);
+}
+@media screen and (min-width: 768px) {
+  .galeria-content .gal4 {
+    grid-column: 1/3;
+    grid-row: 3/5;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .galeria-content .gal4 {
+    grid-column: 1/4;
+    grid-row: 3/5;
+  }
+}
+.galeria-content .gal5 {
+  background-image: url(../img/5-fit.jpg);
+}
+@media screen and (min-width: 768px) {
+  .galeria-content .gal5 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .galeria-content .gal5 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+}
+.galeria-content .gal6 {
+  background-image: url(../img/6-gourmet.jpg);
+}
+@media screen and (min-width: 768px) {
+  .galeria-content .gal6 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .galeria-content .gal6 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+  }
+}
+.galeria-content .gal7 {
+  background-image: url(../img/1-almuerzo-cena.jpg);
+}
+@media screen and (min-width: 768px) {
+  .galeria-content .gal7 {
+    grid-column: 1/2;
+    grid-row: 6/8;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .galeria-content .gal7 {
+    grid-column: 1/4;
+    grid-row: 7/8;
+  }
+}
+.galeria-content .gal8 {
+  background-image: url(../img/asparagus-g5c6722d8c_1280.jpg);
+}
+@media screen and (min-width: 768px) {
+  .galeria-content .gal8 {
+    grid-column: 2/3;
+    grid-row: 6/7;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .galeria-content .gal8 {
+    grid-column: 3/4;
+    grid-row: 5/6;
+  }
+}
+.galeria-content .gal9 {
+  background-image: url(../img/canape-g906001745_1280.jpg);
+}
+@media screen and (min-width: 768px) {
+  .galeria-content .gal9 {
+    grid-column: 2/3;
+    grid-row: 7/8;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .galeria-content .gal9 {
+    grid-column: 3/4;
+    grid-row: 8/9;
+  }
+}
+.galeria-content .gal10 {
+  background-image: url(../img/ingredientes-ariados.jpg);
+}
+@media screen and (min-width: 768px) {
+  .galeria-content .gal10 {
+    grid-column: 1/3;
+    grid-row: 8/9;
+    background-position: bottom;
+    min-height: 320px;
+  }
+}
+.galeria-content .gal11 {
+  background-image: url(../img/macarons-g4dc784cee_1280.jpg);
+}
+@media screen and (min-width: 1080px) {
+  .galeria-content .gal11 {
+    grid-column: 1/3;
+    grid-row: 6/7;
+  }
+}
+.galeria-content .gal12 {
+  background-image: url(../img/oranges-gbb25a6bb5_1280.jpg);
+}
+@media screen and (min-width: 768px) {
+  .galeria-content {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(8, 1fr);
+  }
+}
+@media screen and (min-width: 1080px) {
+  .galeria-content {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(8, 1fr);
+  }
+}
+
+#section-form {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-content {
+  min-width: 300px;
+  max-width: 50%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-content p {
+  text-align: center;
+  margin-block: 1rem;
+}
+
+.form-inputs {
+  margin-block: 1rem;
+  width: 100%;
+}
+
+.btn-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+input[type=submit] {
+  margin-block: 1.5rem;
+  text-align: center;
+}
+
+textarea {
+  resize: none;
+}
+
+.card-content .card:hover {
+  scale: 1.03;
+  transition: 0.5s;
+  box-shadow: 0 0 20px #000;
+}
+.card-content .sb-prod {
+  font-size: 1.4rem;
+}
+.card-content .prod__img:hover {
+  scale: 1.05;
+  box-shadow: 0 0 14px #fff;
+  transition: 0.4s;
+}
+.card-content .prod__img1 {
+  background-image: url(https://images.unsplash.com/photo-1635235765889-4a8507ca26de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTI3fHx1dGVuc2lsaW9zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+}
+.card-content .prod__img2 {
+  background-image: url(https://images.unsplash.com/photo-1470324161839-ce2bb6fa6bc3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzZ8fHV0ZW5zaWxpb3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+}
+.card-content .prod__img3 {
+  background-image: url(https://images.unsplash.com/photo-1518291344630-4857135fb581?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8dXRlbnNpbGlvc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=600);
+}
+.card-content .prod__img4 {
+  background-image: url(https://images.unsplash.com/photo-1631008788127-57317667a0d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+}
+.card-content .prod__img5 {
+  background-image: url(https://images.unsplash.com/photo-1548594172-09665cd0e236?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=564&q=80);
+}
+.card-content .prod__img6 {
+  background-image: url(https://images.unsplash.com/photo-1557687790-902ede7ab58c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=698&q=80);
+}
+
+.section-nosotros {
+  display: flex;
+  justify-content: center;
+}
+.section-nosotros .nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+.section-nosotros .nosotros h1 {
+  font-size: 2rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+  padding-block: 1rem;
+  color: #BA9B72;
+  padding-left: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .section-nosotros .nosotros h1 {
+    font-size: 2.7rem;
+    text-align: left;
+  }
+}
+.section-nosotros .nosotros p {
+  text-align: justify;
+  padding-inline: 2rem;
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 768px) {
+  .section-nosotros .nosotros p {
+    padding-left: 2rem;
+  }
+}
+.section-nosotros .nosotros .nosotros__img {
+  width: 200px;
+}
+@media screen and (min-width: 768px) {
+  .section-nosotros .nosotros .nosotros__img {
+    width: 250px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-nosotros .nosotros {
+    flex-direction: row;
+    margin-inline: 10%;
+  }
+}
+
+.map-section {
+  display: flex;
+}
+.map-section .mapa {
+  min-width: 300px;
+  min-height: 400px;
+}
+@media screen and (min-width: 768px) {
+  .map-section .mapa {
+    min-width: 600px;
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,124 @@
+.hero{
+    background-image: url(../img/hero.jpg);
+    height: 100vh;
+    @extend %disp-flex;
+    flex-direction: column;
+    background-attachment: fixed;
+    .hero-title{
+        padding: 1rem 4rem;
+        color: #FFF;
+        background-color: rgba(222, 184, 135, 0.716);
+    }
+
+    a{
+        text-decoration: none;
+        color: #000;
+        font-size: 1.5rem;
+        background-color: #ffffff;
+        border-radius: 5px;
+        margin-top: 3rem;
+        padding: .4rem 3rem;
+
+        &:hover{
+            background-color: rgb(184, 158, 9);
+            transition: .6s;
+        }
+    }
+
+}
+
+.card-content{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 2rem;
+
+    .card{
+        padding: 2rem;
+        max-width: 380px;
+        min-width: 250px;
+        background-color: $colorTerciario;
+        padding: 1rem;
+        overflow: hidden;
+        border-radius: 5px;
+        margin-inline: 1rem;
+        
+
+        .card__img{
+            min-height: 350px;
+            min-width: 220px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card__img1{
+
+            background-image: url(../img/1-almuerzo-cena.jpg);
+        }
+        .card__img2{
+            background-image: url(../img/2-comida-rapida.jpg);
+        }
+        .card__img3{
+            background-image: url(../img/3-postres.jpg);
+        }
+        .card__img4{
+            background-image: url(../img/4-desayuno.jpg);
+        }
+        .card__img5{
+            background-image: url(../img/5-fit.jpg);
+        }
+        .card__img6{
+            background-image: url(../img/6-gourmet.jpg);
+        }
+
+        .card__info{
+            padding: 1rem;
+
+            .subtitle{
+                color: $colorSecundario;
+                text-shadow: 1px 1px #000;
+            }
+
+            p{
+                font-family: $fuentePrincipal;
+                font-size: 1.3rem;
+                padding-block: 0.5rem;
+            }
+
+            a{
+                text-decoration: none;
+                background-color: $colorFondo;
+                padding-inline: 2.5rem;
+                padding-block: 0.5rem;
+                font-size: 1.2rem;
+                color: #000;
+                font-weight: bold;
+                border-radius: 4px;
+                
+                @include md{
+                    padding-inline: 3rem;
+                }
+
+                &:hover{
+                    box-shadow: 0 0 10px#FFF;
+                    transition: .4s;
+                }
+            }
+
+        }
+    }
+
+    @include md{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    @include lg{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+}

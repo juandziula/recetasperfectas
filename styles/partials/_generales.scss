@@ -1,0 +1,16 @@
+.title{
+    font-size: 3rem;
+    padding-block: 2rem;
+    font-family: $fuentePrincipal;
+    font-weight: 400;
+}
+
+main{
+    background-color: rgb(237, 237, 237);
+    text-align: center;
+    padding-block: 2rem;
+}
+
+section{
+    @extend %disp-flex;
+}

@@ -1,0 +1,167 @@
+.galeria-content{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+    width: 80%;
+    
+    .gal-img{
+        min-height: 280px;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+    }
+
+    .gal1{
+        background-image: url(../img/4-desayuno.jpg);
+
+        @include md{
+            grid-column: 1/2;
+            grid-row: 1/3;
+        }
+
+        @include lg{
+            grid-column: 1/3;
+            grid-row: 1/3;
+        }
+    }
+    .gal2{
+        background-image: url(../img/3-postres.jpg);
+        
+        @include md{
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+
+        @include lg{
+            grid-column: 3/4;
+            grid-row: 1/2;
+        }
+    }
+    .gal3{
+        background-image: url(../img/5-fit.jpg);
+
+        @include md{
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+
+        @include lg{
+            grid-column: 3/4;
+            grid-row: 2/3;
+        }
+    }
+    .gal4{
+        background-image: url(../img/2-comida-rapida.jpg);
+        
+        @include md{
+            grid-column: 1/3;
+            grid-row: 3/5;
+        }
+
+        @include lg{
+            grid-column: 1/4;
+            grid-row: 3/5;
+        }
+    }
+    .gal5{
+        background-image: url(../img/5-fit.jpg);
+        
+        @include md{
+            grid-column: 1/2;
+            grid-row: 5/6;
+        }
+
+        @include lg{
+            grid-column: 1/2;
+            grid-row: 5/6;
+        }
+        
+        
+    }
+    .gal6{
+        background-image: url(../img/6-gourmet.jpg);
+
+        @include md{
+            grid-column: 2/3;
+            grid-row: 5/6;
+        }
+
+        @include lg{
+            grid-column: 2/3;
+            grid-row: 5/6;
+        }
+    }
+    .gal7{
+        background-image: url(../img/1-almuerzo-cena.jpg);
+
+        @include md{
+            grid-column: 1/2;
+            grid-row: 6/8;
+        }
+
+        @include lg{
+            grid-column: 1/4;
+            grid-row: 7/8;
+        }
+    }
+    .gal8{
+        background-image: url(../img/asparagus-g5c6722d8c_1280.jpg);
+        
+        @include md{
+            grid-column: 2/3;
+            grid-row: 6/7;
+        }
+
+        @include lg{
+            grid-column: 3/4;
+            grid-row: 5/6;
+        }
+    }
+    .gal9{
+        background-image: url(../img/canape-g906001745_1280.jpg);
+
+        @include md{
+            grid-column: 2/3;
+            grid-row: 7/8;
+        }
+
+        @include lg{
+            grid-column: 3/4;
+            grid-row: 8/9;
+        }
+    }
+    .gal10{
+        background-image: url(../img/ingredientes-ariados.jpg);
+        
+        @include md{
+            grid-column: 1/3;
+            grid-row: 8/9;
+            background-position: bottom;
+            min-height: 320px ;
+        }
+    }
+    .gal11{
+        background-image: url(../img/macarons-g4dc784cee_1280.jpg);
+
+        @include lg{
+            grid-column: 1/3;
+            grid-row: 6/7;
+        }
+    }
+    .gal12{
+        background-image: url(../img/oranges-gbb25a6bb5_1280.jpg);
+
+    }
+
+    @include md {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+    @include lg{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+}

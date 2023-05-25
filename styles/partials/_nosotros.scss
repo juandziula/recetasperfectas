@@ -1,0 +1,67 @@
+.section-nosotros{
+    display: flex;
+    justify-content: center;
+
+
+    .nosotros{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 400px;
+
+        h1{
+            font-size: 2rem;
+            font-family: $fuentePrincipal;
+            font-weight: 600;
+            padding-block: 1rem;
+            color: $colorTerciario;
+            padding-left: 2rem;
+
+            @include md{
+                font-size: 2.7rem;
+                text-align: left;
+            }
+        }
+
+        p{
+            text-align: justify;
+            padding-inline: 2rem;
+            font-size: 1.2rem;
+
+            @include md{
+                padding-left: 2rem;
+            }
+        }
+
+        .nosotros__img{
+            width: 200px;
+            
+            @include md{
+                width: 250px;
+            }
+        }
+
+        @include md{
+            flex-direction: row;
+            margin-inline: 10%;
+        }
+
+    }
+
+}
+
+.map-section{
+
+    display: flex;
+
+    .mapa{
+        min-width: 300px;
+        min-height: 400px;
+
+        @include md{
+            min-width: 600px;
+        }
+    }
+}
+
